@@ -1,0 +1,203 @@
+<!Doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+        <!-- Bootstrap в связке с Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+      crossorigin="anonymous"></script>
+        <title>Актриса</title>
+        <link rel="stylesheet" type="text/css" href="actstyle.css"/>
+    </head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Заголовок с ссылками и логотипом-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+       
+            <a class="navbar-brand" href="#">Марго Робби</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="films.html">Фильмы</a>
+                    </li>
+                </ul>
+            </div>
+        
+    </nav>
+    
+<!-- Карусель -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-color:rgb(171, 176, 179);">
+            <img src="margo0.jpg" alt="RPjpg" class="d-block mx-auto" style="width:100%"> 
+        </div>
+        <div class="carousel-item" style="background-color:rgb(171, 176, 179);">
+            <img src="margo1.jpg" alt="RP2" class="d-block mx-auto"  style="width:100%">
+        </div>
+        <div class="carousel-item" style="background-color:rgb(171, 176, 179);">
+            <img src="margo2.jpg" alt="s3" class="d-block  mx-auto" style="width:100%">
+        </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                    <ul class="flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#demo">Карусель</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#films">Список фильмов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#actor-info">Биография</a>
+                        </li>
+                   </ul> 
+            </nav>
+        </div>
+        <div class="col-md-4" id="movies">
+            <div class="container mt-3">
+                <div class="card" style="width: 400px">
+                    <img
+                       class="card-img-top"
+                       src="wolk.jpg"
+                       alt="Card image"
+                       style="width:100%"
+                    />
+                    <div class="card-body">
+                        <h4 class="card-title">Волк с Уолл-стрит</h4>
+                        <p class="card-text">
+                            1987 год. Джордан Белфорт становится брокером в успешном инвестиционном банке. Вскоре банк закрывается после внезапного обвала индекса Доу-Джонса.
+                        </p>
+                        <a href="https://www.kinopoisk.ru/film/462682/" class="btn btn-dark">Продолжение</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col-md-4">
+            <div class="container mt-3">
+                <div class="card" style="width: 400px">
+                    <img
+                       class="card-img-top"
+                       src="suicide.jpeg"
+                       alt="Card image"
+                       style="width:100%"
+                    />
+                    <div class="card-body">
+                        <h4 class="card-title">Отряд самоубийц </h4>
+                        <p class="card-text">
+                            Правительство решает дать команде суперзлодеев шанс на искупление. Подвох в том, что их отправляют на выполнение миссии, где они, вероятнее всего, погибнут.
+                        </p>
+                        <a href="https://www.kinopoisk.ru/film/468522/" class="btn btn-dark">Продолжение</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4" id="movies">
+            <div class="container mt-3">
+                <div class="card" style="width: 400px">
+                    <img
+                       class="card-img-top"
+                       src="barbie.jpg"
+                       alt="Card image"
+                       style="width:100%"
+                    />
+                    <div class="card-body">
+                        <h4 class="card-title">Барби</h4>
+                        <p class="card-text">
+                            Самая обыкновенная стереотипная Барби живёт в великолепном розовом Барбиленде, и каждый её день идеален. Она меняет наряды, загорает на пляже, проводит время с другими Барби, день заканчивается шумной вечеринкой с танцами, и в этой позитивной кутерьме с блёстками влюблённый Кен — всего лишь приложение к Барби.
+                        </p>
+                        <a href="https://www.kinopoisk.ru/film/478052/" class="btn btn-dark">Продолжение</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="col-md-4">
+            <div class="container mt-3">
+                <div class="card" style="width: 400px">
+                    <img
+                       class="card-img-top"
+                       src="hollywood.jpg"
+                       alt="Card image"
+                       style="width:100%"
+                    />
+                    <div class="card-body">
+                        <h4 class="card-title">Однажды в… Голливуде</h4>
+                        <p class="card-text">
+                            1969 год, золотой век Голливуда уже закончился. Известный актёр Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
+                        </p>
+                        <a href="https://www.kinopoisk.ru/film/1047883/?utm_referrer=www.google.com" class="btn btn-dark">Продолжение</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container mt-3">
+    <div id="accordion">
+        <div class="card" id="actor-info">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseO">Биография</a>
+            </div>
+        
+            <div id="collapseO" 
+                class="collapse show" 
+                data-bs-parent="accordion"
+            >
+            <div class="card-body">
+                Родилась 2 июля 1990 года в городе Голд-Кост (Австралия).
+                В 2007 году окончила колледж Саммерсет в г. Голд-Кост, а затем переехала в Мельбурн для начала актёрской карьеры.
+                В кино дебютировала в 2008 году, сыграв несколько эпизодов в сериалах, а затем две значительные роли в фильмах австралийского режиссера А. Аарона. В этом же году она получила роль Донны в сериале "Соседи", в 2013 году сыграла в фильме "Волк с Уолл-стрит" и была номинирована на несколько премий
+            </div>
+        </div>
+        
+    </div>
+</div>
+<br>
+<br>
+<br>
+</body>
+</html>
